@@ -3,26 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Audio Mixer</title>
+  <title>Audio Mixer Companion</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Dynamic Audio Mixer</h1>
+  <div class="container">
+    <header>
+      <h1>Audio Mixer Companion</h1>
+    </header>
 
-  <!-- Audio Files -->
-  <p>Using predefined audio files:</p>
-  <ul>
-    <li>Audio Clip 1: <strong>audio/audio1.mp3</strong></li>
-    <li>Audio Clip 2: <strong>audio/audio2.mp3</strong></li>
-  </ul>
+    <main>
+      <!-- Audio Player -->
+      <div class="audio-controls">
+        <button id="play-button">Play</button>
+        <button id="stop-button">Stop</button>
+        <span id="timestamp">0:00 / 0:00</span>
+        <input type="range" id="progress-bar" min="0" max="100" value="0">
+      </div>
 
-  <!-- Mix Ratio Slider -->
-  <label for="mix-slider">Mix Ratio (Clip 1:Clip 2):</label>
-  <input type="range" id="mix-slider" min="0" max="100" value="50"><br><br>
+      <!-- Mixer -->
+      <div class="mixer-controls">
+        <label for="mix-slider">Mix Ratio (Clip 1:Clip 2):</label>
+        <input type="range" id="mix-slider" min="0" max="100" value="50">
+      </div>
 
-  <!-- Controls -->
-  <button id="play">Play</button>
-  <button id="stop">Stop</button>
+      <!-- Description Table -->
+      <div class="description-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Audio Clip</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Clip 1</td>
+              <td>Dummy description for Clip 1. This could explain its content.</td>
+            </tr>
+            <tr>
+              <td>Clip 2</td>
+              <td>Dummy description for Clip 2. This could describe its features.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
