@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Audio Mixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dynamic Audio Mixer</h1>
+
+  <!-- Audio Files -->
+  <p>Using predefined audio files:</p>
+  <ul>
+    <li>Audio Clip 1: <strong>audio/audio1.mp3</strong></li>
+    <li>Audio Clip 2: <strong>audio/audio2.mp3</strong></li>
+  </ul>
+
+  <!-- Mix Ratio Slider -->
+  <label for="mix-slider">Mix Ratio (Clip 1:Clip 2):</label>
+  <input type="range" id="mix-slider" min="0" max="100" value="50"><br><br>
+
+  <!-- Controls -->
+  <button id="play">Play</button>
+  <button id="stop">Stop</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
